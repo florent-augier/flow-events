@@ -11,7 +11,8 @@ import { Close } from "@styled-icons/material-rounded/Close";
 import { styled, useTheme } from "styled-components";
 import Switcher from "./../../components/switch/switchTheme";
 
-const Logo = dynamic(() => import("./../../components/logo/logo.js"));
+// const Logo = dynamic(() => import("./../../components/logo/logo.js"));
+const Brand = dynamic(() => import("./../../components/logo/brand.js"));
 
 import { CustomThemeContext } from "./../../context/WrapperContext";
 
@@ -69,7 +70,7 @@ function Navigation() {
   return (
     <>
       <header>
-        <Logo />
+        <Brand />
         <Switcher onClick={() => switchTheme()} theme={theme} />
         <div className="menu" onClick={isOpen}>
           <Menu />

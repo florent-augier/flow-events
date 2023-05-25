@@ -1,13 +1,13 @@
 "use client";
 
 import { ThemeProvider } from "styled-components";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const themes = {
   light: {
     main: {
-      textColor: "dark",
-      backgroundColor: "white",
+      textColor: "#040319",
+      backgroundColor: "#ffffff",
     },
     colors: {
       black: "black",
@@ -24,13 +24,12 @@ const themes = {
   },
   dark: {
     main: {
-      textColor: "white",
-      backgroundColor: "dark",
+      textColor: "#ffffff",
+      backgroundColor: "#040319",
     },
     colors: {
-      colors: {
-        white: "white",
-      },
+      white: "#ffffff",
+      black: "#040319",
     },
     fonts: ["sans-serif", "Roboto"],
     fontSizes: {
@@ -66,6 +65,22 @@ const themes = {
 
 const Theme = ({ currentTheme, children }) => {
   const { theme } = currentTheme;
+
+  const th = themes[theme];
+
+  console.log(th);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const body = window.document.body;
+      if (body) {
+        body.className = theme;
+        body.style.transitionDuration = "1000ms";
+        body.style.color = th.main.textColor;
+        body.style.backgroundColor = th.main.backgroundColor;
+      }
+    }
+  }, [th, th.main.backgroundColor, th.main.textColor]);
 
   return <ThemeProvider theme={themes[theme]}>{children}</ThemeProvider>;
 };

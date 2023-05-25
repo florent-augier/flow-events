@@ -1,3 +1,5 @@
+import "./globals.css";
+
 import Navigation from "./layout/navigation/navigation";
 
 import Fonts from "./components/fonts/fonts";
@@ -14,14 +16,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="fr">
-      <WrapperContext>
+    <WrapperContext>
+      <html lang="fr">
         <Fonts />
         <body>
           <Navigation />
           {children}
         </body>
-      </WrapperContext>
-    </html>
+      </html>
+    </WrapperContext>
   );
 }

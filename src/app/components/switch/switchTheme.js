@@ -21,15 +21,17 @@ const Button = styled.button`
   border-radius: 50%;
   width: 48px;
   height: 48px;
-  border: none;
+  border: red;
 `;
 
 export default function Switcher({ onClick }) {
   const { theme, switchTheme } = useContext(CustomThemeContext);
 
+  console.log(theme);
+
   return (
     <Button onClick={() => switchTheme()} alt="Changer de thème">
-      {theme === "light" ? <Moon /> : <Sun />}
+      {theme === "light" ? <Moon color="#040319" /> : <Sun color="#040319" />}
     </Button>
   );
 }

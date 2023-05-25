@@ -5,6 +5,8 @@ import styles from "./page.module.css";
 
 import Main from "./components/main/main";
 
+import { useTheme } from "styled-components";
+
 import Header1 from "./components/typography/header";
 
 import Logo from "./components/logo/logo";

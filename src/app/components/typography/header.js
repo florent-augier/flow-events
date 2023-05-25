@@ -21,7 +21,7 @@ const H1 = styled.h1`
   @media screen and ${devices.md} {
     font-size: 36px;
   }
-  @media screen and ${devices.xs} {
+  @media screen and ${devices.sm} {
     font-size: 24px;
   }
 `;

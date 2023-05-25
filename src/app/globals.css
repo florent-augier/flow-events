@@ -87,16 +87,21 @@ body {
 
 body {
   font-family: var(--font-featherly);
-  color: rgb(var(--foreground-rgb));
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-  /* background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
+}
+body.dark {
+  font-family: var(--font-featherly);
+  background: linear-gradient(-45deg, #000000, #414141, #4c4177, #2a5470);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+body.light {
+  font-family: var(--font-featherly);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 
 a {

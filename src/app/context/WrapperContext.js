@@ -11,6 +11,9 @@ export default function WrapperContext({ children }) {
 
   const switchTheme = () => setTheme(theme === "light" ? "dark" : "light");
 
+
+  // html.styles.backgroundColor = theme;
+
   return (
     <CustomThemeContext.Provider value={{ theme, switchTheme }}>
       <Theme currentTheme={{ theme }}>{children}</Theme>
