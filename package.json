@@ -9,10 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@styled-icons/entypo": "^10.46.0",
+    "@styled-icons/feather": "^10.47.0",
+    "@styled-icons/material-rounded": "^10.47.0",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.2",
+    "framer-motion": "^10.12.12",
     "next": "13.4.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-epic-spinners": "^0.5.0",
+    "sass": "^1.62.1",
+    "styled-components": "^6.0.0-rc.1"
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^8.0.1"
   }
 }
