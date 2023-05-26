@@ -1,3 +1,5 @@
+"use client";
+
 import Header1 from "./../components/typography/header";
 
 import Main from "../components/main/main";
