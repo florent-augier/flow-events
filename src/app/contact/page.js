@@ -1,5 +1,11 @@
 import Header1 from "./../components/typography/header";
 
+import Main from "../components/main/main";
+
 export default function Contact() {
-  return <Header1>Contact</Header1>;
+  return (
+    <Main>
+      <Header1>Contact</Header1>
+    </Main>
+  );
 }
