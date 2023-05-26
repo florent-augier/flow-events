@@ -1,5 +1,7 @@
 import localFont from "next/font/local";
 
+// code
+
 const lasticaFont = localFont({
   src: [
     {
