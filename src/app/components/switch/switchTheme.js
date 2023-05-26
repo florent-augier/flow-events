@@ -1,8 +1,8 @@
+"use client";
+
 import Image from "next/image";
 
 import { useContext } from "react";
-
-import flowEventsLogo from "public/Flow.jpg";
 
 import { CustomThemeContext } from "./../../context/WrapperContext";
 
