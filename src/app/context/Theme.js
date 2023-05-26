@@ -68,8 +68,6 @@ const Theme = ({ currentTheme, children }) => {
 
   const th = themes[theme];
 
-  console.log(th);
-
   useEffect(() => {
     if (typeof window !== "undefined") {
       const body = window.document.body;

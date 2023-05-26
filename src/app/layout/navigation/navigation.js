@@ -1,11 +1,9 @@
 "use client";
 
-import dynamic from "next/dynamic";
-
-import React, { useState, useContext } from "react";
 import "./navigation.scss";
+import dynamic from "next/dynamic";
+import React, { useState, useContext } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
 import { Menu } from "@styled-icons/material-rounded/Menu";
 import { Close } from "@styled-icons/material-rounded/Close";
 import { styled, useTheme } from "styled-components";
@@ -15,8 +13,6 @@ import Switcher from "./../../components/switch/switchTheme";
 const Brand = dynamic(() => import("./../../components/logo/brand.js"));
 
 import { CustomThemeContext } from "./../../context/WrapperContext";
-
-// import Logo from "./../../components/logo/logo";
 
 function Navigation() {
   const currentTheme = useContext(CustomThemeContext);
@@ -73,7 +69,7 @@ function Navigation() {
         <Brand />
         <Switcher onClick={() => switchTheme()} theme={theme} />
         <div className="menu" onClick={isOpen}>
-          <Menu />
+          <Menu size="42" fill="#040319" />
         </div>
       </header>
       <AnimatePresence>
