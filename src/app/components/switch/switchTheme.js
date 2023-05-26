@@ -22,6 +22,7 @@ const Button = styled.button`
   width: 48px;
   height: 48px;
   border: red;
+  background-color: #fffff;
 `;
 
 export default function Switcher({ onClick }) {
@@ -31,7 +32,7 @@ export default function Switcher({ onClick }) {
 
   return (
     <Button onClick={() => switchTheme()} alt="Changer de thème">
-      {theme === "light" ? <Moon color="#040319" /> : <Sun color="#040319" />}
+      {theme === "light" ? <Moon /> : <Sun />}
     </Button>
   );
 }
