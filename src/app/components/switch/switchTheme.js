@@ -25,15 +25,15 @@ const Button = styled.button`
   border: none;
 `;
 
-export default function Switcher({ onClick }) {
+export default function Switcher({ onClick, className }) {
   const { theme, switchTheme } = useContext(CustomThemeContext);
 
   return (
     <Button onClick={switchTheme} alt="Changer de thème">
       {theme === "light" ? (
-        <Moon size="42" fill="#040319" />
+        <Moon size="42" fill="#040319" style={{ borderRadius: "50%" }} />
       ) : (
-        <Sun size="42" fill="#040319" />
+        <Sun size="42" fill="#040319" style={{ borderRadius: "50%" }} />
       )}
     </Button>
   );

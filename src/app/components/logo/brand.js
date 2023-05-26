@@ -7,10 +7,10 @@ import Logo from "./logo";
 import { devices } from "../../devices";
 
 const WrapperBrand = styled.div`
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
   left: 48px;
   @media ${devices.md} {
     left: 24px;
@@ -32,12 +32,13 @@ const Text = styled.span`
   }
   @media ${devices.sm} {
     font-size: 12px;
+    margin-left: 0;
   }
 `;
 
-export default function Brand() {
+export default function Brand({ className }) {
   return (
-    <WrapperBrand>
+    <WrapperBrand className={className}>
       <Logo />
       <Text>Flow Events</Text>
     </WrapperBrand>

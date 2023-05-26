@@ -1,12 +1,12 @@
 import "./globals.css";
 
-import Navigation from "./layout/navigation/navigation";
-
 import Fonts from "./components/fonts/fonts";
 
 import { React } from "react";
 
 import WrapperContext from "./context/WrapperContext";
+
+import Root from "./components/root";
 
 export const metadata = {
   title: "Flow Events 13",
@@ -20,8 +20,7 @@ export default function RootLayout({ children }) {
       <html lang="fr">
         <Fonts />
         <body>
-          <Navigation />
-          {children}
+          <Root>{children}</Root>
         </body>
       </html>
     </WrapperContext>

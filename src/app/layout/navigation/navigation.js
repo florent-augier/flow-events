@@ -69,7 +69,7 @@ function Navigation() {
         <Brand />
         <Switcher onClick={() => switchTheme()} theme={theme} />
         <div className="menu" onClick={isOpen}>
-          <Menu size="42" fill="#040319" />
+          <Menu size="42" />
         </div>
       </header>
       <AnimatePresence>
@@ -83,7 +83,7 @@ function Navigation() {
             exit="exit"
           >
             <div className="btn_close" onClick={closeMenu}>
-              <Close />
+              <Close size="42" fill="#040319" />
             </div>
 
             {links.map((link, i) => (
