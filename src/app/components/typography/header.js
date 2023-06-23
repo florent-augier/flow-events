@@ -9,6 +9,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-block: 100px;
 `;
 
 const H1 = styled.h1`

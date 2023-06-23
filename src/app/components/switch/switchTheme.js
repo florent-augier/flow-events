@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-
 import { useContext } from "react";
 
 import { CustomThemeContext } from "./../../context/WrapperContext";

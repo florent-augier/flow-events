@@ -7,7 +7,7 @@ import { useEffect } from "react";
 import useWindowSize from "../hooks/useWindowSize";
 
 const Loading = ({ isPending }) => {
-  const [{ width, height }] = useWindowSize();
+  const { width, height } = useWindowSize();
 
   const style = {
     height: height,
